@@ -1,14 +1,30 @@
-You launch the server and the client each in 2 consoles :
+
+1°/ install the code on your machine
+
+    git clone git://github.com/alainravet/client-server-two-byte-calculator.git
+    cd client-server-two-byte-calculator
 
 
-Server (Calculator) :
-    > ruby server.rb
+2°/ launch the server :
 
-Automated Client with a few sample operations :
-    > ruby client.rb
+    Server (Calculator) :
+        > <open 1 console>
+        > cd client-server-two-byte-calculator
+        > ruby server.rb
 
-Interactive Client :
-    > telnet localhost 6666
-      # type commands here
-      # ex: PLUS 1 2 3
-      # end with "OK CLOSE"
+3°/ launch the client :
+
+    Automated Client with a few sample operations :
+        > <open 1 console>
+        > cd client-server-two-byte-calculator
+        > ruby client.rb
+
+ or :
+
+    Interactive Client :
+        > <open 1 console>
+        > cd client-server-two-byte-calculator
+        > telnet localhost 6666
+          # type commands here
+          # ex: PLUS 1 2 3
+          # end with "OK CLOSE"
