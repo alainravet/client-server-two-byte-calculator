@@ -12,6 +12,11 @@ module Calculator
       input
     end
 
+    def calculate(text)
+      op, args = op_and_arguments(text)
+      args.reduce(op)
+    end
+
     # input  : "PLUS 1 2 3"
     # output : ["PLUS", [1, 2, 3]]
     def op_and_arguments(command)
