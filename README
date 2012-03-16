@@ -1,0 +1,14 @@
+Server (Calculator) :
+    # start the server in a dedicated console with
+    > ruby server.rb
+
+
+Client :
+    # start the client in a dedicated console with
+    > ruby client.rb
+
+Interactive Client :
+    > telnet localhost 6666
+      # type commands here
+      # ex: PLUS 1 2 3
+      # end with "OK CLOSE"
