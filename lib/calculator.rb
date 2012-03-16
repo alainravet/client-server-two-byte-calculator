@@ -1,4 +1,4 @@
-require_relative 'two_byte_int'
+require File.dirname(__FILE__) + '/two_byte_int'
 module Calculator
 
   OPERATORS_AS_SYMBOLS = {

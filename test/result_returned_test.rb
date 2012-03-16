@@ -1,4 +1,4 @@
-require_relative 'test_helper'
+require File.dirname(__FILE__) + '/test_helper'
 
 describe Calculator do
   describe "#process_input" do

@@ -1,4 +1,6 @@
-(requirement : Ruby 1.9.x)
+Note : on Ruby 1.8.7 you must install minitest first :
+
+   gem install minitest
 
 
 1°/ install the code on your machine

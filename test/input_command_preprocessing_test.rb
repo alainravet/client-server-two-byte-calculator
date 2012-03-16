@@ -1,4 +1,4 @@
-require_relative 'test_helper'
+require File.dirname(__FILE__) + '/test_helper'
 
 describe Calculator do
   describe "#op_and_arguments" do

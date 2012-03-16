@@ -10,7 +10,7 @@ EOC_COMMAND  = "OK CLOSE"
 EOC_RESPONSE = "CLOSED"
 
 require 'socket'
-require_relative 'lib/calculator'
+require File.dirname(__FILE__) + '/lib/calculator'
 
 def start_server
   server  = TCPServer.new PORT

@@ -1,4 +1,4 @@
-require_relative 'test_helper'
+require File.dirname(__FILE__) + '/test_helper'
 describe String do
 
   describe ".to_2_byte_integer" do

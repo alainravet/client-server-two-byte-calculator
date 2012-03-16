@@ -1,5 +1,6 @@
-require_relative '../lib/calculator'
+require File.dirname(__FILE__) + '/../lib/calculator'
 
+require 'rubygems'
 require 'minitest/spec'
 require 'minitest/autorun'
 
