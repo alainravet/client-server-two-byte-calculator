@@ -10,6 +10,11 @@ describe Calculator do
       Calculator.process_input('PLUS 1 2 3 4').must_equal "RESULT #{total}"
     end
 
+    it "returns 'ERROR' if there was division by zero" do
+
+      Calculator.process_input('DIVIDE 2 0').must_equal "ERROR"
+    end
+
   end
 
 end

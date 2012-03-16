@@ -8,7 +8,7 @@ describe Calculator do
     end
 
     it 'extracts the arguments and convert them to numbers' do
-      @arguments.must_equal [1,2,3]
+      @arguments.must_equal [1,2,3].map(&:to_2_byte_integer)
     end
 
     it 'extracts the operator and convert it to a symbol' do

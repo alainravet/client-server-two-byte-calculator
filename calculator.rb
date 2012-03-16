@@ -1,3 +1,4 @@
+require_relative 'two_byte_int'
 module Calculator
 
   OPERATORS = {
@@ -10,6 +11,9 @@ module Calculator
   class << self
     def process_input(text)
       "RESULT #{calculate(text)}"
+    rescue
+      TwoByteInt::Error
+      'ERROR'
     end
 
     def calculate(text)
@@ -22,7 +26,7 @@ module Calculator
     def op_and_arguments(command)
       els = command.split
       operator = OPERATORS.fetch(els.shift) # 'PLUS' => :+
-      arguments = els.map(&:to_i)
+      arguments = els.map(&:to_2_byte_integer)
 
       [operator, arguments]
     end
