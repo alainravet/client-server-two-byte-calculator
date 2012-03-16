@@ -1,3 +1,5 @@
+(requirement : Ruby 1.9.x)
+
 
 1°/ install the code on your machine
 
@@ -28,3 +30,10 @@
           # type commands here
           # ex: PLUS 1 2 3
           # end with "OK CLOSE"
+
+------
+How to run the tests :
+
+    > cd client-server-two-byte-calculator
+    > rake test
+
