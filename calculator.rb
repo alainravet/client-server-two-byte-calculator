@@ -8,8 +8,8 @@ module Calculator
   }
 
   class << self
-    def process_input(input)
-      input
+    def process_input(text)
+      "RESULT #{calculate(text)}"
     end
 
     def calculate(text)
