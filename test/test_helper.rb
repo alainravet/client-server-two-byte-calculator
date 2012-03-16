@@ -1,4 +1,4 @@
-require_relative '../calculator'
+require_relative '../lib/calculator'
 
 require 'minitest/spec'
 require 'minitest/autorun'

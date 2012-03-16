@@ -1,10 +1,10 @@
+You launch the server and the client each in 2 consoles :
+
+
 Server (Calculator) :
-    # start the server in a dedicated console with
     > ruby server.rb
 
-
-Client :
-    # start the client in a dedicated console with
+Automated Client with a few sample operations :
     > ruby client.rb
 
 Interactive Client :
